@@ -8,7 +8,8 @@ body {
   font-family: "Mulish", sans-serif;
 }
 
-section {
+section,
+footer {
   margin-top: 50px;
 }
 
@@ -123,9 +124,11 @@ section {
 
 #feature-2 {
   grid-column: 7 / span 6;
+  background: rgba(41, 206, 246, 0.05);
 }
 #feature-3 {
   grid-column: 4 / span 6;
+  background: rgba(233, 68, 68, 0.05);
 }
 
 .feature {
@@ -147,6 +150,68 @@ section {
   color: #131318;
   font-size: 24px;
   font-weight: 800;
+}
+
+/* footer section styles */
+
+
+.footer-container {
+  background: rgba(19, 19, 24, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  text-align: center;
+  height: 100%;
+}
+
+.footer-container h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.footer-icons i {
+  color: #131318;
+  margin-right: 25px;
+}
+
+.footer-container p {
+  color: #5a5a5d;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  width: 55%;
+}
+
+.footer-description {
+  width: 55%;
+}
+
+.footer-container hr {
+  background: rgba(19, 19, 24, 0.1);
+  width: 70%;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand p, .brand span {
+  color: #131318;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.brand img {
+  width: 40px;
+}
+.brand span {
+    color: #FF5400;
+    margin-left: 5px;
 }
 
 /* responsive styles */
@@ -191,5 +256,23 @@ section {
 
   .feature h3 {
     font-size: 16px;
+  }
+
+  .brand p, .brand span {
+    font-size: 25px;
+  }
+
+  .footer-description{
+    width: 100%;
+  }
+  .footer-icons i{
+    margin-right: 10px;
+  }
+
+  .footer-container #copyright{
+
+    font-size: 14px;
+    width: 100%;
+
   }
 }

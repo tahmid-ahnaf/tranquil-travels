@@ -146,14 +146,14 @@ footer {
   width: 85%;
 }
 
-.feature h3 {
+.feature h3,
+.newsletter-content h3 {
   color: #131318;
   font-size: 24px;
   font-weight: 800;
 }
 
 /* footer section styles */
-
 
 .footer-container {
   background: rgba(19, 19, 24, 0.05);
@@ -200,7 +200,8 @@ footer {
   gap: 10px;
 }
 
-.brand p, .brand span {
+.brand p,
+.brand span {
   color: #131318;
   font-size: 32px;
   font-weight: 800;
@@ -210,9 +211,89 @@ footer {
   width: 40px;
 }
 .brand span {
-    color: #FF5400;
-    margin-left: 5px;
+  color: #ff5400;
+  margin-left: 5px;
 }
+
+/* newsletter section styles */
+
+.newsletter-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  justify-content: center;
+}
+
+.newsletter-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 16px;
+  border: 1px solid #ff5400;
+  padding: 40px;
+}
+.newsletter-content p{
+    width: 60%;
+}
+
+.newsletter-content hr{
+    width: 90%;
+    background: rgba(19, 19, 24, 0.10);
+    color: #131318;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+form input {
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  padding: 16px 20px;
+  border: none;
+}
+
+form button, .newsletter-image button {
+  border-radius: 8px;
+  background: #ff5400;
+  padding: 14px;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.newsletter-image {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.newsletter-image button span{
+    display: block;
+    font-weight: 700;
+}
+
+.newsletter-image button{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    transform: rotate(-15deg);
+    transform-origin: left bottom;
+    scale: 1.04;
+    padding: 20px 25px;
+    width: 40%;
+}
+
+.newsletter-image img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 16px;
+}
+
 
 /* responsive styles */
 
@@ -258,21 +339,32 @@ footer {
     font-size: 16px;
   }
 
-  .brand p, .brand span {
+  .brand p,
+  .brand span {
     font-size: 25px;
   }
 
-  .footer-description{
+  .footer-description {
     width: 100%;
   }
-  .footer-icons i{
+  .footer-icons i {
     margin-right: 10px;
   }
 
-  .footer-container #copyright{
-
+  .footer-container #copyright {
     font-size: 14px;
     width: 100%;
-
   }
+
+  .newsletter-container{
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+  }
+
+  .newsletter-image button{
+    padding: 10px 15px;
+  }
+  .newsletter-content p{
+    width: 100%;
+}
 }

@@ -11,7 +11,7 @@ body {
 section,
 footer,
 section {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .container {
@@ -491,6 +491,45 @@ video {
   font-weight: 800;
 }
 
+/* bonus section styles */
+
+/* card styles */
+
+.bonus-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.bonus-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.bonus-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  
+}
+
+.bonus-card img {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.card-title {
+  color: #18191f;
+  font-size: 28px;
+  font-weight: 500;
+}
+
 /* responsive styles */
 
 @media screen and (max-width: 601px) {
@@ -599,5 +638,9 @@ video {
     top: calc((100% - 40px) / 2);
     font-size: 20px;
     font-weight: 700;
+  }
+
+  .bonus-card-container {
+    grid-template-columns: 1fr;
   }
 }

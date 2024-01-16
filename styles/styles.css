@@ -9,7 +9,7 @@ body {
 }
 
 section,
-footer {
+footer,section {
   margin-top: 50px;
 }
 
@@ -409,6 +409,40 @@ form button,
   margin-right: 5px;
 }
 
+/* header styles */
+header{
+  margin-top: 40px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+nav ul{
+  display: flex;
+  gap: 40px;
+}
+
+nav ul li{
+  list-style: none;
+  
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #424247;
+}
+
+nav ul li:first-child a{
+  color: #FF5400;
+}
+
+.hamburger{
+  display: none;
+}
+
 /* responsive styles */
 
 @media screen and (max-width: 601px) {
@@ -501,5 +535,12 @@ form button,
     width: 100%;
   }
 
+  .hamburger{
+    display: block;
+    font-size: 30px;
+  }
 
+  nav{
+    display: none;
+  }
 }

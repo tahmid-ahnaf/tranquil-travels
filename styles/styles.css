@@ -344,6 +344,71 @@ form button,
   max-width: fit-content;
 }
 
+/* banner styles */
+
+.banner-container {
+  background: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("../Images/banner.png") no-repeat center / cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  align-items: center;
+  height: 500px;
+  border-radius: 16px;
+}
+
+.banner-container .section-title {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 800;
+}
+
+.banner-container .section-description {
+  color: #fff;
+  font-size: 16px;
+}
+
+.banner-select-container {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 24px;
+  display: flex;
+  gap: 24px;
+}
+
+.banner-select-container input {
+  border-radius: 8px;
+  background: #fff;
+  border: none;
+  padding: 14px 20px;
+}
+.select-custom select {
+  font-size: 16px;
+  padding: 14px 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  color: rgba(19, 19, 24, 0.5);
+  cursor: pointer;
+  border: none;
+}
+
+.banner-select-container button {
+  padding: 16px 20px;
+  border-radius: 8px;
+  background: #ff5400;
+  border: none;
+  color: #FFF;
+}
+
+.banner-select-container button span{
+  margin-right: 5px;
+}
+
 /* responsive styles */
 
 @media screen and (max-width: 601px) {
@@ -421,4 +486,20 @@ form button,
     grid-template-columns: 1fr;
     row-gap: 40px;
   }
+
+  .banner-select-container {
+    flex-direction: column;
+  }
+
+  .banner-container{
+    text-align: center;
+    height: max-content;
+    padding: 20px;
+  }
+
+  .banner-select-container .select-custom select{
+    width: 100%;
+  }
+
+
 }
